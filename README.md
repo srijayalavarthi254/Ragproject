@@ -53,8 +53,11 @@ Save your OpenAI API key in a file named api_key.txt.
 Save your Activeloop token in a file named activeloop.txt.
 Place these files in the root directory of the project:
 Ragproject/
+
 ├── api_key.txt
+
 ├── activeloop.txt
+
 Run the Project Use the following command to execute the main script:
 
 ##bash
