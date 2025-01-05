@@ -1,17 +1,23 @@
 ##Ragproject
+
 ##Overview
+
 Ragproject is a Retrieval-Augmented Generation (RAG) framework that combines natural language processing (NLP) and machine learning techniques to provide enhanced text generation and search capabilities. The project integrates external knowledge bases to generate contextual responses, leveraging tools like OpenAI's GPT models, vector embeddings, and cosine similarity for text similarity evaluation.
 
 ###Key Features
+
 Retrieval-augmented text generation for improved contextuality.
 Efficient vector search using deeplake for text embeddings.
 Cosine similarity evaluation to measure response relevance.
 Supports pre-trained transformer models for embeddings using sentence-transformers.
 Flexible integration with external knowledge bases.
+
 ##Installation
+
 To set up this project locally, follow these steps:
 
 ##Prerequisites
+
 Python 3.7 or higher
 pip (Python package installer)
 A valid OpenAI API key
@@ -82,7 +88,9 @@ Ragproject/
 ├── requirements.txt     # List of all required dependencies (if applicable)
 
 ├── README.md            # Project documentation (this file)
+
 #How It Works
+
 Data Retrieval:
 
 Input queries are embedded using sentence-transformers or OpenAI's embedding models.
