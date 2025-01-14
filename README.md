@@ -7,9 +7,13 @@ Ragproject is a Retrieval-Augmented Generation (RAG) framework that combines nat
 ###Key Features
 
 Retrieval-augmented text generation for improved contextuality.
+
 Efficient vector search using deeplake for text embeddings.
+
 Cosine similarity evaluation to measure response relevance.
+
 Supports pre-trained transformer models for embeddings using sentence-transformers.
+
 Flexible integration with external knowledge bases.
 
 ##Installation
@@ -104,25 +108,35 @@ Ragproject/
 Data Retrieval:
 
 Input queries are embedded using sentence-transformers or OpenAI's embedding models.
+
 Similar vectors are retrieved using deeplake.
+
 Augmented Generation:
 
 The retrieved data is combined with the user query to enhance context.
+
 GPT (OpenAI models like text-davinci-003 or gpt-4) generates a detailed response.
 
 ##Features
 #Document Retrieval: Collects and processes documents from URLs.
+
 #Vector Store: Uses Deep Lake for storing document embeddings.
+
 #Indexing: Generates and queries document indexes for efficient retrieval.
+
 #Search Engine: Executes queries on documents using various indexing strategies (Vector Store, Tree, List, Keyword).
+
 #Performance Metrics: Measures execution time and query performance.
 
 ##Query Engine
 Various query engines are available to search the documents based on user input. The following engines are implemented:
 
 #Vector Store Index: Uses cosine similarity for document retrieval.
+
 #Tree Index: Organizes documents hierarchically for efficient search.
+
 #List Index: Indexes documents in a list format for retrieval.
+
 #Keyword Index: Queries based on keywords for document matching.
 
 ##Evaluation:
@@ -130,13 +144,17 @@ Various query engines are available to search the documents based on user input.
 Responses are evaluated using cosine similarity to ensure relevance to the query.
 
 #Performance Evaluation
+
 The project provides performance evaluation by calculating:
 
 Average Query Execution Time
+
 Cosine Similarity Score
+
 Performance Metric (based on query speed and relevance)
 
 ##Conclusion
+
 This RAG framework integrates state-of-the-art document retrieval and generation techniques, providing a flexible and efficient approach to process and query large document datasets.
 
 
