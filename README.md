@@ -11,9 +11,13 @@ Ragproject is a **Retrieval-Augmented Generation (RAG)** framework that combines
 ## **Key Features**
 
 - **Retrieval-augmented text generation:** Improves contextuality by combining retrieved data with the input query.
+  
 - **Efficient vector search:** Uses Deep Lake for efficient storage and retrieval of text embeddings.
+  
 - **Cosine similarity evaluation:** Measures the relevance of retrieved documents for improved accuracy.
+  
 - **Pre-trained transformer models for embeddings:** Supports sentence-transformers for document vectorization.
+  
 - **Flexible integration with external knowledge bases:** Enables integration with external data for enhanced query handling.
 
 ---
@@ -33,13 +37,21 @@ To set up this project locally, follow the steps below.
 --Install the required Python libraries by running the following commands:
 
     ->pip install openai
+    
     ->pip install deeplake
+    
     ->pip install sentence-transformers
+    
     ->pip install scikit-learn
+    
     ->pip install pandas
+    
     ->pip install textwrap3 # Optional, for text formatting
+    
     ->pip install markdown # Optional, for rendering markdown responses
+    
     ->pip install nltk
+    
     ->pip install spacy
 
 
@@ -53,8 +65,11 @@ Install additional required libraries:
 
 
     -> pip install llama-index-vector-stores-deeplake==0.1.6
+    
     ->pip install deeplake==3.9.18
+    
     ->pip install llama-index==0.10.64
+    
     ->pip install sentence-transformers==3.0.1
 
 
@@ -104,15 +119,25 @@ Below is the structure of the project:
 
 Ragproject/
 ├── main.py                      # Main script for running the RAG model
+
 ├── augmented_generation.py       # Handles query augmentation and GPT-based generation
+
 ├── datacollections.py            # Data collection and preprocessing script
+
 ├── embeddings_vector.py          # Embedding generation and vector storage
+
 ├── llamaindex.py                 # Index-based implementation
+
 ├── multi_modular_Raag.py          # New modular RAG implementation
+
 ├── llm.txt                       # Logs or supporting notes for LLM queries
+
 ├── api_key.txt                   # Contains the OpenAI API key (DO NOT SHARE)
+
 ├── activeloop.txt                # Contains the Activeloop token
+
 ├── requirements.txt              # List of all required dependencies
+
 ├── README.md                     # Project documentation (this file)
 
 
@@ -136,8 +161,11 @@ The `multi_modular_rag.py` file introduces a more modular approach to the Retrie
 ### **Main Functions:**
 
 - **`load_api_keys()`**: Loads API keys from files.
+  
 - **`preprocess_data(query)`**: Collects documents and generates embeddings.
+  
 - **`retrieve_and_augment(query)`**: Retrieves relevant documents using cosine similarity and augments the query using GPT.
+  
 - **`run_rag_pipeline(query)`**: The main pipeline that retrieves, augments, and generates a response using the RAG framework.
 
 ### **How to Use:**
@@ -181,8 +209,11 @@ This will prompt you to enter a query, and the system will respond with a contex
   
 - **Search Engine**: Executes queries on documents using various indexing strategies:
   - **Vector Store**: Uses cosine similarity for document retrieval.
+    
   - **Tree Index**: Organizes documents hierarchically for efficient searching.
+    
   - **List Index**: Indexes documents in a list format for retrieval.
+    
   - **Keyword Index**: Queries based on keywords for document matching.
 
 - **Performance Metrics**:
@@ -195,8 +226,11 @@ This will prompt you to enter a query, and the system will respond with a contex
 Various query engines are available to search documents based on user input:
 
 - **Vector Store Index**: Uses cosine similarity to retrieve documents based on vector proximity.
+  
 - **Tree Index**: Organizes documents hierarchically for optimized query searching.
+  
 - **List Index**: Indexes documents sequentially for retrieval.
+  
 - **Keyword Index**: Searches documents based on keyword matching.
 
 ---
@@ -212,10 +246,12 @@ The **Ragproject** evaluates the relevance of the generated responses using **co
 The project tracks key performance metrics to gauge the effectiveness of the retrieval and generation process, including:
 
 - **Average Query Execution Time**: Measures how long the system takes to process each query.
+  
 - **Cosine Similarity Score**: Evaluates the relevance of retrieved documents based on cosine similarity.
+  
 - **Performance Metric**: A composite metric that evaluates the query speed and relevance.
 
----
+
 
 ## **Conclusion**
 
